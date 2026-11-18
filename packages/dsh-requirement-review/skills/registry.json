@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "sourceRepository": "https://github.com/lichufeng123/ai-test-engineer",
+  "sourcePath": ".agents/skills",
+  "generatedAt": "2026-11-18T02:04:52.289Z",
+  "skills": [
+    {
+      "id": "requirement-spec-generate",
+      "description": "Use when prototypes, HTML demos, screenshots, rough PRDs, review notes, defect evidence, or mixed materials must become a reviewable requirement specification before rule or test-case generation.",
+      "files": [
+        {
+          "path": "requirement-spec-generate/SKILL.md",
+          "sha256": "ae4633132bbdd895b371e8ccb08442fc60309e361df1c2b2a776492441403357"
+        }
+      ]
+    },
+    {
+      "id": "generate-business-assertions",
+      "description": "Use when reviewed requirements and current business knowledge must be converted into traceable business-flow rules, atomic assertions, change sets, and a human review gate before test-case generation.",
+      "files": [
+        {
+          "path": "generate-business-assertions/SKILL.md",
+          "sha256": "55a2989e482524e4298a86db3010942c8109f207aadd6ca6d421ffd1d76649d3"
+        }
+      ]
+    },
+    {
+      "id": "test-case-generate",
+      "description": "Use when approved requirements and business rules must become reviewed functional test cases, regression impact, execution handoff, or test-discovered case updates without creating a competing baseline.",
+      "files": [
+        {
+          "path": "test-case-generate/SKILL.md",
+          "sha256": "8dfc2003d34a67d92828b14466683685ca803391df9753022e8d3a647c883d1a"
+        },
+        {
+          "path": "test-case-generate/references/list-result-consistency.md",
+          "sha256": "7fd64e9a6be0dc755844208bb64a89624f463d74c81a5324912cc069a7571d4c"
+        },
+        {
+          "path": "test-case-generate/references/permission-testing.md",
+          "sha256": "7ac418b4e7e85930c13fb44237c075268fb6aede170a3dfce1eee656871aceb2"
+        },
+        {
+          "path": "test-case-generate/references/standard-test-report.md",
+          "sha256": "1c756e8a5e0763ac10543e0b8aae349f6fb38b58b4f870c232785ded481e146e"
+        }
+      ]
+    }
+  ]
+}

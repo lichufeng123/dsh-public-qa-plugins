@@ -1,0 +1,9 @@
+{
+  "name": "dsh-public-qa-plugins",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check packages/dsh-requirement-review/src/index.js && node --check packages/dsh-fixture-console/src/index.js && node --check packages/dsh-fixture-console/bin/cli.js && node --check packages/dsh-fixture-console/lib/generator.js",
+    "test": "node --test packages/*/test/*.test.js"
+  }
+}

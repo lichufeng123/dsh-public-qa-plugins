@@ -1,0 +1,17 @@
+{
+  "name": "dsh-requirement-review",
+  "version": "0.1.0",
+  "description": "Portable, source-grounded requirement review skills for DeepSeek Harness. Business adapters remain user supplied.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": { ".": "./src/index.js", "./package.json": "./package.json" },
+  "files": ["src/index.js", "skills/", "cordis.patch.yml", "README.md", "LICENSE"],
+  "scripts": { "check": "node --check src/index.js", "test": "node --test test/*.test.js" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "peerDependencies": { "@deepseek-ai/cordis": "~4.1.0", "@deepseek-ai/dsh-skill": "0.2.2-rc.1" },
+  "publishConfig": { "access": "public" },
+  "repository": { "type": "git", "url": "git+https://github.com/lichufeng123/dsh-public-qa-plugins.git", "directory": "packages/dsh-requirement-review" },
+  "homepage": "https://github.com/lichufeng123/dsh-public-qa-plugins/tree/main/packages/dsh-requirement-review"
+}
