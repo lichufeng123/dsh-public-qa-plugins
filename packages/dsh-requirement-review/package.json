@@ -1,7 +1,9 @@
 {
   "name": "dsh-requirement-review",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Portable, source-grounded requirement review skills for DeepSeek Harness. Business adapters remain user supplied.",
+  "author": "lichufeng123",
+  "keywords": ["dsh-plugin", "deepseek-harness", "requirements", "testing", "quality-assurance", "skills"],
   "type": "module",
   "main": "src/index.js",
   "exports": { ".": "./src/index.js", "./package.json": "./package.json" },
@@ -9,9 +11,10 @@
   "scripts": { "check": "node --check src/index.js", "test": "node --test test/*.test.js" },
   "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
   "license": "MIT",
-  "engines": { "node": ">=22" },
+  "engines": { "node": ">=22", "dsh": ">=0.2.2-rc.1" },
   "peerDependencies": { "@deepseek-ai/cordis": "~4.1.0", "@deepseek-ai/dsh-skill": "0.2.2-rc.1" },
-  "publishConfig": { "access": "public" },
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" },
+  "bugs": { "url": "https://github.com/lichufeng123/dsh-public-qa-plugins/issues" },
   "repository": { "type": "git", "url": "git+https://github.com/lichufeng123/dsh-public-qa-plugins.git", "directory": "packages/dsh-requirement-review" },
   "homepage": "https://github.com/lichufeng123/dsh-public-qa-plugins/tree/main/packages/dsh-requirement-review"
 }

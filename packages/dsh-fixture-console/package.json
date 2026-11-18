@@ -1,7 +1,9 @@
 {
   "name": "dsh-fixture-console",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate bounded synthetic test fixtures locally for DeepSeek Harness. It does not connect to or seed business systems.",
+  "author": "lichufeng123",
+  "keywords": ["dsh-plugin", "deepseek-harness", "test-data", "fixtures", "testing", "synthetic-data"],
   "type": "module",
   "main": "src/index.js",
   "exports": { ".": "./src/index.js", "./package.json": "./package.json" },
@@ -10,9 +12,10 @@
   "scripts": { "check": "node --check src/index.js && node --check bin/cli.js && node --check lib/generator.js", "test": "node --test test/*.test.js" },
   "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
   "license": "MIT",
-  "engines": { "node": ">=22" },
+  "engines": { "node": ">=22", "dsh": ">=0.2.2-rc.1" },
   "peerDependencies": { "@deepseek-ai/cordis": "~4.1.0", "@deepseek-ai/dsh-skill": "0.2.2-rc.1" },
-  "publishConfig": { "access": "public" },
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" },
+  "bugs": { "url": "https://github.com/lichufeng123/dsh-public-qa-plugins/issues" },
   "repository": { "type": "git", "url": "git+https://github.com/lichufeng123/dsh-public-qa-plugins.git", "directory": "packages/dsh-fixture-console" },
   "homepage": "https://github.com/lichufeng123/dsh-public-qa-plugins/tree/main/packages/dsh-fixture-console"
 }
