@@ -14,9 +14,14 @@ for package in "${PACKAGES[@]}"; do
   fi
 
   otp=''
-  printf 'Enter npm one-time code for %s@%s: ' "$name" "$version"
+  printf 'Enter the 6-digit code from your authenticator app for %s@%s: ' "$name" "$version"
   IFS= read -r -s otp
   printf '\n'
+  if [[ ! "$otp" =~ ^[0-9]{6}$ ]]; then
+    unset otp
+    printf 'Invalid code format; expected 6 digits. No publish was attempted.\n' >&2
+    exit 2
+  fi
   (
     cd "$package_dir"
     NPM_CONFIG_OTP="$otp" npm publish --access public
