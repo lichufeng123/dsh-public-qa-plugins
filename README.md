@@ -16,4 +16,8 @@ npm test
 (cd packages/dsh-fixture-console && npm pack --dry-run)
 ```
 
+## Publish both packages
+
+After `npm login --auth-type=web`, run `bash scripts/publish-npm.sh` from the repository root in a local terminal. The script checks whether each exact version is already present, prompts for each required npm one-time code without echoing it, and publishes the two packages sequentially. Do not paste one-time codes into chat. If a release partially succeeds, the script skips versions already present on a subsequent run.
+
 No private Yizhi domains, fixed accounts, business identifiers, endpoint contracts or run evidence belong in this repository.
